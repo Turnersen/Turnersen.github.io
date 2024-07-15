@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Library Book List Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Silent Library Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="booklist.html">BOOK LIST</a></li>
+                    <li><a href="events.html">EVENTS & CLUBS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+ <!-- Filter  Section  -->
+
+        <section class="filter-section">
+            <h2>Filter by Genre</h2>
+        
+                   <!-- Search Bar -->
+
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search for books, authors, or topics...">
+                <button class="search-button" onclick="searchBooks()">🔍</button>
+            </div>
+        
+            <div class="filter-options">
+                <label class="filter-option">
+                    <input type="checkbox" name="genre" value="fiction"> Fiction
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="genre" value="non-fiction"> Non-Fiction
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="genre" value="mystery"> Mystery
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="genre" value="fantasy"> Fantasy
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="genre" value="biography"> Biography
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="genre" value="science-fiction"> Science Fiction
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="genre" value="children"> Children
+                </label>
+            </div>
+            <button class="filter-button" onclick="filterBooks()">Apply Filters</button>
+        </section>
+
+        <!-- Book List -->
+
+        <section class="book-list">
+            <h2>Book List</h2>
+            <p></p>
+            <div class="book-container">
+                <div class="book-item">
+                   <a href="bookpage.html"><img src="images/Dune  Book Cover.jpg" alt="dune" class="book-cover"></a>
+                    <div class="book-info">
+                        <a href="bookpage.html"><h3 class="book-title">Dune</h3></a>
+                        <p class="book-author">by Frank Herbert</p>
+                        <p class="book-description">Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/Iron  Flame Cover.png" alt="iron-flame" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Iron Flame</h3>
+                        <p class="book-author">by Rebecca Yarros</p>
+                        <p class="book-description">Everyone expected Violet Sorrengail to die during her first year at Basgiath War College—Violet included. But Threshing was only the first impossible test meant to weed out the weak-willed, the unworthy, and the unlucky.
+
+                            Now the real training begins, and Violet’s already wondering how she’ll get through. It’s not just that it’s grueling and maliciously brutal, or even that it’s designed to stretch the riders’ capacity for pain beyond endurance. It’s the new vice commandant, who’s made it his personal mission to teach Violet exactly how powerless she is–unless she betrays the man she loves.</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/Educated Cover.jpg" alt="educated" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Educated</h3>
+                        <p class="book-author">by Tara Westover</p>
+                        <p class="book-description">Tara Westover was 17 the first time she set foot in a classroom. Born to survivalists in the mountains of Idaho, she prepared for the end of the world by stockpiling home-canned peaches and sleeping with her "head-for-the-hills bag". In the summer she stewed herbs for her mother, a midwife and healer, and in the winter she salvaged in her father's junkyard.</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/A Court Of Thorns  And Roses.jpg" alt="acotar" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">A Court Of Thorns And Roses</h3>
+                        <p class="book-author">by Sarah J. Maas</p>
+                        <p class="book-description">When nineteen-year-old huntress Feyre kills a wolf in the woods, a terrifying creature arrives to demand retribution. Dragged to a treacherous magical land she knows about only from legends, Feyre discovers that her captor is not truly a beast, but one of the lethal, immortal faeries who once ruled her world.
+
+                            At least, he’s not a beast all the time.</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/The Women.jpg" alt="the-women" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">The Women</h3>
+                        <p class="book-author">by Kristin Hannah</p>
+                        <p class="book-description">An intimate portrait of coming of age in a dangerous time and an epic tale of a nation divided.
+
+                            Women can be heroes. When twenty-year-old nursing student Frances “Frankie” McGrath hears these words, it is a revelation. Raised in the sun-drenched, idyllic world of Southern California and sheltered by her conservative parents, she has always prided herself on doing the right thing. But in 1965, the world is changing, and she suddenly dares to imagine a different future for herself. When her brother ships out to serve in Vietnam, she joins the Army Nurse Corps and follows his path.</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/Ask Not.jpg" alt="ask-not" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Ask Not: The Kennedys and the Women They Destroyed</h3>
+                        <p class="book-author">by Maureen Callahan</p>
+                        <p class="book-description">From New York Times bestseller Maureen Callahan, a fierce, character-driven exposé of the real Kennedy Curse—the family’s generations-long legacy of misogyny, murder, and mayhem—and the women who have paid the price for our obsession with Camelot</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/Swan Song.jpg" alt="swan-song" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Swan Song</h3>
+                        <p class="book-author">by Elin Hilderbrand</p>
+                        <p class="book-description">In the grand finale of "queen of the beach read" Elin Hilderbrand's beloved Nantucket novels, there's a new couple in town... and they instantly shake things up. Amid the extravagant parties on land and sea, there's trouble on the island, forcing Chief of Police Ed Kapanesh to postpone his retirement and changing the fabric of life on the picturesque island forever...</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/For One More Day.jpg" alt="for-one-more-day" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">For One More Day</h3>
+                        <p class="book-author">by Mitch Albom</p>
+                        <p class="book-description">"Every family is a ghost story..."
+
+                            Mitch Albom mesmerized readers around the world with his number one New York Times bestsellers, The Five People You Meet in Heaven and Tuesdays with Morrie. Now he returns with a beautiful, haunting novel about the family we love and the chances we miss.</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/Yellowface.jpg" alt="yellowface" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Yellowface</h3>
+                        <p class="book-author">by R.F. Kuang</p>
+                        <p class="book-description">White lies. Dark humor. Deadly consequences… Bestselling sensation Juniper Song is not who she says she is, she didn’t write the book she claims she wrote, and she is most certainly not Asian American—in this chilling and hilariously cutting novel from R.F. Kuang, the #1 New York Times bestselling author of Babel.</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/Hello Beautiful.jpg" alt="hello-beautiful" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Hello Beautiful</h3>
+                        <p class="book-author">by Ann Napolitano</p>
+                        <p class="book-description">An emotionally layered and engrossing story of a family that asks: Can love make a broken person whole?
+
+                            William Waters grew up in a house silenced by tragedy, where his parents could hardly bear to look at him, much less love him. So it’s a relief when his skill on the basketball court earns him a scholarship to college, far away from his childhood home. He soon meets Julia Padavano, a spirited and ambitious young woman who surprises William with her appreciation of his quiet steadiness. With Julia comes her family; she is inseparable from her three younger sisters: Sylvie, the dreamer, is happiest with her nose in a book and imagines a future different from the expected path of wife and mother; Cecelia, the family’s artist; and Emeline, who patiently takes care of all of them. Happily, the Padavanos fold Julia’s new boyfriend into their loving, chaotic household.</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/The  Wishing  Game.jpg" alt="the-wishing-game" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">The Wishing Game</h3>
+                        <p class="book-author">by Meg Shaffer</p>
+                        <p class="book-description">Make a wish. . . .
+
+                            Lucy Hart knows better than anyone what it’s like to grow up without parents who loved her. In a childhood marked by neglect and loneliness, Lucy found her solace in books, namely the Clock Island series by Jack Masterson. Now a twenty-six-year-old teacher’s aide, she is able to share her love of reading with bright, young students, especially seven-year-old Christopher Lamb, who was left orphaned after the tragic death of his parents. Lucy would give anything to adopt Christopher, but even the idea of becoming a family seems like an impossible dream without proper funds and stability.</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/Tom Lake.jpg" alt="tom-lake" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Tom Lake</h3>
+                        <p class="book-author">by Ann Patchett</p>
+                        <p class="book-description">In this beautiful and moving novel about family, love, and growing up, Ann Patchett once again proves herself one of America’s finest writers.
+
+                            In the spring of 2020, Lara’s three daughters return to the family's orchard in Northern Michigan. While picking cherries, they beg their mother to tell them the story of Peter Duke, a famous actor with whom she shared both a stage and a romance years before at a theater company called Tom Lake. As Lara recalls the past, her daughters examine their own lives and relationship with their mother, and are forced to reconsider the world and everything they thought they knew.</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/Someone Else's Shoes.jpg" alt="someone-elses-shoes" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Someone Else's Shoes</h3>
+                        <p class="book-author">by Jojo Moyes</p>
+                        <p class="book-description">A story of mix-ups, mess-ups and making the most of second chances, this is the new novel from #1 New York Times bestselling author Jojo Moyes, author of Me Before You and The Giver of Stars.
+
+                            Who are you when you are forced to walk in someone else’s shoes?</p>
+                    </div>
+                </div>
+                <div class="book-item">
+                    <img src="images/Evil Eye.jpg" alt="evil-eye" class="book-cover">
+                    <div class="book-info">
+                        <h3 class="book-title">Evil Eye</h3>
+                        <p class="book-author">by Etaf Rum</p>
+                        <p class="book-description">The acclaimed New York Times bestselling author of A Woman Is No Man returns with a striking exploration of the expectations of Palestinian-American women, the meaning of a fulfilling life, and the ways our unresolved pasts affect our presents.
+
+                            Raised in a conservative and emotionally volatile Palestinian family in Brooklyn, Yara thought she would finally feel free when she married a charming entrepreneur who took her to the suburbs. She’s gotten to follow her dreams, completing an undergraduate degree in Art and landing a good job at the local college. As a traditional wife, she also raises their two school-aged daughters, takes care of the house, and has dinner ready when her husband gets home. With her family balanced with her professional ambitions, Yara knows that her life is infinitely more rewarding than her own mother’s. So why doesn’t it feel like enough?</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Page Counter -->
+
+            <div class="pagination">
+                <button class="pagination-button" onclick="prevPage()">&#10094; Previous</button>
+                <span class="page-info">Page <span id="current-page">1</span> of <span id="total-pages">5</span></span>
+                <button class="pagination-button" onclick="nextPage()">Next &#10095;</button>
+            </div>
+
+        </section>
+        
+        <!-- Donate Bar -->
+
+    <div class="donate-bar">
+        <span class="donate-text">SUPPORT THE SILENT LIBRARY, GIVE TODAY</span>
+        <span class="donate-arrow">&#8594;</span> 
+    </div>
+
+<!-- Website Footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booklist.html">Booklist</a></li>
+                    <li><a href="events.html">Events & Clubs</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Library</h3>
+                <ul>
+                    <li><a href="#">Get a Library Card</a></li>
+                    <li><a href="#">Borrowing</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Chat</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Subscribe</h3>
+                <div class="footer-subscribe">
+                    <input type="email" placeholder="Enter your email for updates">
+                    <button type="button">Subscribe</button>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Silent Library. All rights reserved.</p>
+            <p>123 Library Lane, Knowledge City, 98765</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+    
+    <!--JavaScript for Toggle Menu-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+    
+</body>
+</html>

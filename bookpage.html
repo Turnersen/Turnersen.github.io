@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <title>Silent Library Book Page</title>
+</head>
+<body>
+     <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Silent Library Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="booklist.html">BOOK LIST</a></li>
+                    <li><a href="events.html">EVENTS & CLUBS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <!-- Highlighted Book Section -->
+
+
+        <header>
+            <h1>DUNE</h1>
+        </header>
+       
+    <main class="book-details-container">
+        <div class="book-details">
+            <div class="book-cover-container">
+                <img src="images/Dune  Book Cover.jpg" alt="dune" class="book-cover">
+            </div>
+            <div class="book-info">
+                <h2 class="book-title">Dune</h2>
+                <p class="book-author">by Frank Herbert</p>
+                <p class="book-description">Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for...
+
+                    When House Atreides is betrayed, the destruction of Paul’s family will set the boy on a journey toward a destiny greater than he could ever have imagined. And as he evolves into the mysterious man known as Muad’Dib, he will bring to fruition humankind’s most ancient and unattainable dream.</p>
+                <p class="book-details">
+                    <strong>Genre:</strong> Fiction<br> ScienceFiction <br> Fantasy <br> 
+                    <strong>Publisher:</strong> Ace<br>
+                    <strong>ISBN:</strong> 9780593099322 <br> (ISBN10: 059309932X)<br>
+                    <strong>Publication Date:</strong> October 1, 2019
+                </p>
+                <button class="action-button">Borrow this Book</button>
+                <button class="action-button">Reserve this Book</button>
+            </div>
+        </div>
+    </main>
+
+        <!--Reviews Section-->
+    
+        <section class="reviews">
+            <img src="images/Frank Herbert.jpg" alt="frank-herbert">
+                <div class="review">
+                <h2>About the Author</h2>
+                 <h3>Frank Herbert</h3>
+                    <p>Franklin Patrick Herbert Jr. was an American science fiction author best known for the 1965 novel Dune and its five sequels. Though he became famous for his novels, he also wrote short stories and worked as a newspaper journalist, photographer, book reviewer, ecological consultant, and lecturer.
+                    The Dune saga, set in the distant future, and taking place over millennia, explores complex themes, such as the long-term survival of the human species, human evolution, planetary science and ecology, and the intersection of religion, politics, economics and power in a future where humanity has long since developed interstellar travel and settled many thousands of worlds. Dune is the best-selling science fiction novel of all time, and the entire series is considered to be among the classics of the genre.</p>
+                    <p><strong>Books Pulished: </strong>486</p>
+                </div>
+        
+    <!--Related Books Section-->
+
+        </section>
+        
+        <section class="related-books">
+            <h2>Related Books</h2>
+            <div class="related-book-item">
+                <img src="images/Ender's Game.jpg" alt="enders-game" class="related-book-cover">
+                <h3>Ender's Game</h3>
+                <p>by Orson Scott Card</p>
+            </div>
+            <div class="related-book-item">
+                <img src="images/Foundation.jpg" alt="foundation" class="related-book-cover">
+                <h3>Foundation</h3>
+                <p>by Isaac Asimov</p>
+            </div>
+            <div class="related-book-item">
+                <img src="images/The  Hobbit.jpg" alt="the-hobbit" class="related-book-cover">
+                <h3>The Hobbit</h3>
+                <p>by J.R.R. Tolkien</p>
+            </div>
+            <div class="related-book-item">
+                <img src="images/The Hitchhiker's  Guide  to  the Galaxy.jpg" alt="the-hitchhikers-guide-to-the-galaxy" class="related-book-cover">
+                <h3>The Hitchhiker's Guide to the Galaxy</h3>
+                <p>by Douglas Adams</p>
+            </div>
+            
+        </section>
+
+    <!-- Donate Bar -->
+
+    <div class="donate-bar">
+        <span class="donate-text">SUPPORT THE SILENT LIBRARY, GIVE TODAY</span>
+        <span class="donate-arrow">&#8594;</span> 
+    </div>
+  
+        <!-- Website Footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booklist.html">Booklist</a></li>
+                    <li><a href="events.html">Events & Clubs</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Library</h3>
+                <ul>
+                    <li><a href="#">Get a Library Card</a></li>
+                    <li><a href="#">Borrowing</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Chat</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Subscribe</h3>
+                <div class="footer-subscribe">
+                    <input type="email" placeholder="Enter your email for updates">
+                    <button type="button">Subscribe</button>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Silent Library. All rights reserved.</p>
+            <p>123 Library Lane, Knowledge City, 98765</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+    
+
+    <!--JavaScript for Toggle Menu-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+</html>

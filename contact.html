@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Library Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Silent Library Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="booklist.html">BOOK LIST</a></li>
+                    <li><a href="events.html">EVENTS & CLUBS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Contact Section -->
+
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+    
+        <div class="contact-container">
+            <div class="contact-section">
+                <h2>Get in Touch</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+    
+            <div class="contact-details">
+                <h2>Contact Details</h2>
+                <p><strong>Address:</strong> 123 Library St, Booktown, BK 12345</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@silentlibrary.com</p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <div class="faq-container">
+                <h2>Frequently Asked Questions</h2>
+                <button class="accordion">What are the library hours?</button>
+                <div class="panel">
+                    <p>Our library is open Monday to Saturday from 9 AM to 5 PM.</p>
+                </div>
+        
+                <button class="accordion">How do I get a library card?</button>
+                <div class="panel">
+                    <p>You can apply for a library card online or visit us in person. Please bring a valid ID and proof of address.</p>
+                </div>
+        
+                <button class="accordion">Can I return books late?</button>
+                <div class="panel">
+                    <p>Yes, late returns incur a small fee, but we offer a grace period of 3 days.</p>
+                </div>
+        
+                <button class="accordion">Are there events for kids?</button>
+                <div class="panel">
+                    <p>Yes, we host various events for children, including storytime and craft workshops. Check our Events page for the schedule.</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Donate Bar -->
+
+    <div class="donate-bar">
+        <span class="donate-text">SUPPORT THE SILENT LIBRARY, GIVE TODAY</span>
+        <span class="donate-arrow">&#8594;</span> 
+    </div>
+
+<!-- Website Footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booklist.html">Booklist</a></li>
+                    <li><a href="events.html">Events & Clubs</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Library</h3>
+                <ul>
+                    <li><a href="#">Get a Library Card</a></li>
+                    <li><a href="#">Borrowing</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Chat</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Subscribe</h3>
+                <div class="footer-subscribe">
+                    <input type="email" placeholder="Enter your email for updates">
+                    <button type="button">Subscribe</button>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Silent Library. All rights reserved.</p>
+            <p>123 Library Lane, Knowledge City, 98765</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+
+<!--JavaScript for Toggle Menu-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+        
+
+    <!-- Script for Accordion -->
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(acc => {
+            acc.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    panel.classList.remove('show');
+                } else {
+                    panel.style.display = "block";
+                    panel.classList.add('show');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

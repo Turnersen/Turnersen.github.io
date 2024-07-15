@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Library Events Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Silent Library Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="booklist.html">BOOK LIST</a></li>
+                    <li><a href="events.html">EVENTS & CLUBS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <header>
+            <h1>Our Upcoming Events</h1>
+        </header>
+    
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Search for events...">
+            <button class="search-button">Search</button>
+        </div>
+    
+        <div class="events-container">
+            <div class="event">
+                <img src="images/Book Signing.jpg" alt="book-signing">
+                <div class="event-details">
+                    <h2 class="event-title">LOCAL BOOK SIGNING</h2>
+                    <p class="event-datetime">Date: July 20, 2024 | Time: 10:00 AM - 12:00 PM</p>
+                    <p class="event-description">Don't miss our upcoming local book signing event, where you can meet your favorite hometown authors! This is a unique opportunity to hear the stories behind the stories, get your books personally signed, and engage in lively conversations with the authors. Enjoy an evening filled with literary insights, discover new reads, and connect with fellow book enthusiasts in the community. Join us for this special celebration of local talent and storytelling!</p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="images/Storytime for Kids.jpg" alt="story-time-for-kids">
+                <div class="event-details">
+                    <h2 class="event-title">INTERNATIONAL BOOK FUNDRAISING</h2>
+                    <p class="event-datetime">Date: July 22, 2024 | Time: 1:00 PM - 3:00 PM</p>
+                    <p class="event-description">Support literacy worldwide by joining our International Book Fundraising event! Your contributions will help provide books and educational resources to underprivileged communities across the globe. Together, we can make a difference and foster a love for reading in children and adults everywhere. Be a part of this meaningful cause!</p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="images/Study Groups.jpg" alt="study-group">
+                <div class="event-details">
+                    <h2 class="event-title">STUDY GROUP</h2>
+                    <p class="event-datetime">Date: July 25, 2024 | Time: 2:00 PM - 4:00 PM</p>
+                    <p class="event-description">Join our Study Group for a collaborative and productive learning experience! Whether you're preparing for exams, working on assignments, or just seeking a quiet space to study with peers, our group offers support and resources for students of all ages. Enhance your learning, share ideas, and succeed together!</p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="images/Poetry Slam.jpg" alt="poetry-slam">
+                <div class="event-details">
+                    <h2 class="event-title">POETRY SLAM</h2>
+                    <p class="event-datetime">Date: July 25, 2024 | Time: 6:00 PM - 8:00 PM</p>
+                    <p class="event-description">Join us for an exciting Poetry Slam where local poets showcase their talent! This vibrant event invites participants to share original works in a supportive atmosphere. Whether you’re a performer or an audience member, come celebrate the power of words and creativity!</p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="images/Crafting Corner.jpg" alt="crafting-corner">
+                <div class="event-details">
+                    <h2 class="event-title">CRAFTING CORNER</h2>
+                    <p class="event-datetime">Saturday, September 7, 2024 | Time: 2:00 PM - 4:00 PM</p>
+                    <p class="event-description">Get creative at our Crafting Corner! This hands-on workshop invites all ages to explore different crafting techniques and make fun projects. Supplies are provided, so bring your imagination and join us for a delightful afternoon of creativity and community!</p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="images/Tech Talk.jpg" alt="tech-talk">
+                <div class="event-details">
+                    <h2 class="event-title">TECH TALK</h2>
+                    <p class="event-datetime">Date: Wednesday, October 10, 2024 | Time: 5:30 PM - 7:00 PM</p>
+                    <p class="event-description">Join us for Tech Talk, a series of workshops designed to enhance your digital skills! From social media tips to coding basics, these informative sessions cater to all skill levels. Stay updated with the latest technology trends and learn something new with us!</p>
+                </div>
+            </div>
+    </section>
+
+        <!-- Page Counter -->
+
+            <div class="pagination">
+                <button class="pagination-button" onclick="prevPage()">&#10094; Previous</button>
+                <span class="page-info">Page <span id="current-page">1</span> of <span id="total-pages">5</span></span>
+                <button class="pagination-button" onclick="nextPage()">Next &#10095;</button>
+            </div>
+
+        </section>
+        
+        <!-- Donate Bar -->
+
+    <div class="donate-bar">
+        <span class="donate-text">SUPPORT THE SILENT LIBRARY, GIVE TODAY</span>
+        <span class="donate-arrow">&#8594;</span> 
+    </div>
+
+<!-- Website Footer -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booklist.html">Booklist</a></li>
+                    <li><a href="events.html">Events & Clubs</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Library</h3>
+                <ul>
+                    <li><a href="#">Get a Library Card</a></li>
+                    <li><a href="#">Borrowing</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="contact.html">FAQ</a></li>
+                    <li><a href="contact.html">Chat</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Subscribe</h3>
+                <div class="footer-subscribe">
+                    <input type="email" placeholder="Enter your email for updates">
+                    <button type="button">Subscribe</button>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Silent Library. All rights reserved.</p>
+            <p>123 Library Lane, Knowledge City, 98765</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+    
+    <!--JavaScript for Toggle Menu-->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</head>
+</html>

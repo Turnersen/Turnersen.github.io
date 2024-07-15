@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sitemap</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">    
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Silent Library Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="booklist.html">BOOK LIST</a></li>
+                    <li><a href="events.html">EVENTS & CLUBS</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <!-- Sitemap Section     -->
+
+    <header>
+        <h1>Site Map</h1>
+    </header>
+
+    <div class="sitemap-container">
+        <div class="sitemap-section">
+            <h2>Main Pages</h2>
+            <ul class="sitemap-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booklist.html">Book List</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>Resources</h2>
+            <ul class="sitemap-list">
+                <li><a href="library-card.html">Get a Library Card</a></li>
+                <li><a href="borrowing.html">Borrowing</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="sitemap-section">
+            <h2>Community</h2>
+            <ul class="sitemap-list">
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="donate.html">Support Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- Donate Bar -->
+
+<div class="donate-bar">
+    <span class="donate-text">SUPPORT THE SILENT LIBRARY, GIVE TODAY</span>
+    <span class="donate-arrow">&#8594;</span> 
+</div>
+
+<!-- Website Footer -->
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booklist.html">Booklist</a></li>
+                <li><a href="events.html">Events & Clubs</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Library</h3>
+            <ul>
+                <li><a href="#">Get a Library Card</a></li>
+                <li><a href="#">Borrowing</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="contact.html">FAQ</a></li>
+                <li><a href="contact.html">Chat</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Subscribe</h3>
+            <div class="footer-subscribe">
+                <input type="email" placeholder="Enter your email for updates">
+                <button type="button">Subscribe</button>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Silent Library. All rights reserved.</p>
+        <p>123 Library Lane, Knowledge City, 98765</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+</footer>
+
+<!--JavaScript for Toggle Menu-->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0"
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px"
+    }
+</script>
+
+</body>
+</html>
